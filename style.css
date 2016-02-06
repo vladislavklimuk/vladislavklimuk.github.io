@@ -69,7 +69,7 @@ body{
 	letter-spacing:0.5rem;
 	text-align: center;
 	padding-left: 0.5rem;
-	padding-top: 1rem
+	padding-top: 1rem;
 
 
 }
@@ -142,11 +142,40 @@ body{
 
 	}
 	.line1{
+		padding-top: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
 		width: 100%;
 		
 	}
+	.namesite{
+		display: inline-block;
+		width: 100%;
+		font-size: 9vw;
+		font-family: "roboto thin";
+		letter-spacing:0.5rem;
+		text-align: center;
+		padding: 0px;
+	
+}
+
+	.but a{
+		overflow: hidden;
+		text-align: center;
+		display: block;
+		padding-top: 15%;
+		padding-bottom: 10%;
+	}
+	.but{
+		padding-top:0px;
+		width: 100%;
+	}
+	
+	.pic:first-child{
+		margin-top: 0px;
+	}
+
+
 
 
 }
