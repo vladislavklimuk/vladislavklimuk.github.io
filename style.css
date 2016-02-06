@@ -125,11 +125,21 @@ body{
 
 }
 @media (max-width: 760px){
-	
+
+
 	.pic{
 		width: 100%;
 		margin-left:0px;
 		margin-right: 0px;
+		min-width: none;
+		max-width: none;
+	}
+	.pic img{
+		width: 100%;
+		max-width: none;
+		min-width: none;
+
+
 	}
 	.line1{
 		padding-left: 0px;
