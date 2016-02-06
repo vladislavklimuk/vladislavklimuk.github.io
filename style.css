@@ -77,7 +77,6 @@ body{
 .nav{
 	width: 100%;
 	margin: auto;
-	overflow: hi;
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -94,4 +93,35 @@ body{
 }
 .but a:hover{
 	border-bottom: 1px solid white;
+}
+
+
+
+
+
+
+
+.line1{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%;
+	display: flex;
+   	flex-wrap: wrap;
+   	 align-items: center;
+    justify-content: center; 
+}
+.pic img{
+	width: 100%;
+	height: auto;
+	display: block;
+
+}
+.pic{
+	width: 20%;
+	min-width: 300px;
+	max-width: 500px;
+	margin: 1rem;
+	
+
+
 }
