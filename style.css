@@ -124,3 +124,17 @@ body{
 
 
 }
+@media (max-width: 760px){
+	
+	.pic{
+		width: 100%;
+		margin-left:0px;
+		margin-right: 0px;
+	}
+	.line1{
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+		
+	}
+}
