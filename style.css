@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,7 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: "roboto thin";
+	font-family: 'Roboto thin', sans-serif;
 }
 * {
   margin: 0;
@@ -65,7 +66,7 @@ body{
 	width: 100%;
 	color:white;
 	font-size: 3rem;
-	font-family: "roboto thin";
+	font-family: 'Roboto thin', sans-serif;
 	letter-spacing:0.5rem;
 	text-align: center;
 	padding-left: 0.5rem;
@@ -136,6 +137,7 @@ body{
 	}
 	.pic img{
 		width: 100%;
+		height: auto;
 		max-width: none;
 		min-width: none;
 
@@ -152,7 +154,7 @@ body{
 		display: inline-block;
 		width: 100%;
 		font-size: 8vw;
-		font-family: "roboto thin";
+		font-family: 'Roboto thin', sans-serif;
 		letter-spacing:0.5rem;
 		text-align: center;
 		padding: 0px;
