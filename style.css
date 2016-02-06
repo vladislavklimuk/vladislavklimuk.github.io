@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: 'Roboto thin', sans-serif;
+	font-weight:100;
 }
 * {
   margin: 0;
@@ -67,6 +68,7 @@ body{
 	color:white;
 	font-size: 3rem;
 	font-family: 'Roboto thin', sans-serif;
+	font-weight:100;
 	letter-spacing:0.5rem;
 	text-align: center;
 	padding-left: 0.5rem;
@@ -155,6 +157,7 @@ body{
 		width: 100%;
 		font-size: 8vw;
 		font-family: 'Roboto thin', sans-serif;
+		font-weight:100;
 		letter-spacing:0.5rem;
 		text-align: center;
 		padding: 0px;
