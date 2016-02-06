@@ -193,3 +193,11 @@ body{
 }
 
 }
+
+@media (max-width: 400px){
+	.namesite{
+		
+	font-size: 6vw;
+
+	}
+}
