@@ -166,7 +166,7 @@ body{
 		padding-top: 15%;
 		padding-bottom: 10%;
 		font-size: 4vw;
-		transition:0s all;
+		transition:0.01s all;
 	}
 	.but{
 		padding-top:0px;
