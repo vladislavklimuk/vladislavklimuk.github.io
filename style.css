@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Roboto thin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:100;
 }
 * {
@@ -67,7 +67,7 @@ body{
 	width: 100%;
 	color:white;
 	font-size: 3rem;
-	font-family: 'Roboto thin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:100;
 	letter-spacing:0.5rem;
 	text-align: center;
@@ -156,7 +156,7 @@ body{
 		display: inline-block;
 		width: 100%;
 		font-size: 8vw;
-		font-family: 'Roboto thin', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-weight:100;
 		letter-spacing:0.5rem;
 		text-align: center;
