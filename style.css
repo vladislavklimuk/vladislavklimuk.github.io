@@ -179,6 +179,9 @@ body{
 	padding-bottom: 2vw;
 
 }
+.nazv{
+	display: none;
+}
 @media (max-width: 980px){
 
 
@@ -260,6 +263,16 @@ body{
 	margin: 5vw;
 
 }
+.lef{
+	display: none;
+}
+.nazv{
+	display: block;
+	text-align: center;
+	font-size: 5vw;
+	margin-top: 5vw;
+}
+
 }
 
 @media (max-width: 400px){
