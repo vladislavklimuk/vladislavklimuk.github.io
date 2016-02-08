@@ -111,7 +111,8 @@ body{
    	flex-wrap: wrap;
    	 align-items: center;
     justify-content: center; 
-    font-size: 1.3rem;	
+    font-size: 1.3rem;
+    position: relative;
 }
 .pic img{
 	width: 100%;
@@ -136,6 +137,47 @@ body{
 }
 .cont{
 	margin-top: 5vw;
+}
+.name{
+	margin-top: 1vw;
+	padding-bottom: 0%;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin: auto;
+
+}
+.paddt{
+	padding-top: 1vw;
+}
+.lef{
+	position: absolute;
+	
+	/* Chrome, Safari: */
+    -webkit-transform: rotate(-90deg);
+ 
+    /* Firefox: */
+    -moz-transform: rotate(-90deg);
+ 
+    /* Opera: */
+    -o-transform: rotate(-90deg);
+ 
+    /* Internet Explorer: ; (первый вариант): */
+    -ms-transform: rotate(-90deg);
+    font-size: 3rem;
+    left: 0;
+    top: 50%;
+    display: block;
+    margin-left: -2%;
+
+
+
+}
+
+.bord{
+	width: 100%;
+	margin-top: 2vw;
+	padding-bottom: 2vw;
+
 }
 @media (max-width: 980px){
 
@@ -238,3 +280,26 @@ body{
 
 
 }
+@media (max-width:1550px ) and (min-width:1475px){
+	.lef{
+		margin-left: -4%;
+	}
+
+
+
+
+}
+@media (max-width:1200px ) and (min-width:1106px){
+	.lef{
+		margin-left: -4%;
+	}
+
+
+
+
+}
+@media (max-width:1200px ) and (min-width:1106px){
+	.lef{
+		margin-left: -6%;
+	}
+	}
