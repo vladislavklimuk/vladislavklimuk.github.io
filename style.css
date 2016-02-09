@@ -427,3 +427,9 @@ body{
         transform: translateX(0);
     }
 }
+@media screen and (min-width: 1200px) {/* если окно браузера больше максимальной ширины сайта */ 
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+}
