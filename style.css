@@ -20,6 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	font-family: 'Roboto', sans-serif;
 	font-weight:100;
+
 }
 * {
   margin: 0;
@@ -62,9 +63,16 @@ body{
 	background-image: url("img.png");
 	}
 
+
 .first{
 	margin-top: 4vw;
 
+}
+@media screen and (min-width: 1000px) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
 }
 
 .namesite{
@@ -80,6 +88,17 @@ body{
 
 
 }
+.logo{
+	width: 100%;
+	height: 3.5rem;
+	text-align: center;
+	margin-top: 1rem;
+
+}
+.logo img{
+	width: auto;
+	height: 100%;
+}
 .nav{
 	width: 100%;
 	margin: auto;
@@ -88,11 +107,13 @@ body{
     justify-content: center;
 }
 .but{
-	padding-top: 4rem;
+	padding-top: 2rem;
 	font-size: 1.5rem;
 }
 .but a{
-	padding: 2rem;
+	padding-top: 2rem;
+	padding-left: 1.9rem;
+	padding-right: 1.9rem;
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid #222;
 	transition:0.5s all;
@@ -239,8 +260,10 @@ body{
 @media (max-width: 980px){
 	.first{
 	margin-top: 0vw;
-
-}
+	}
+	.photos{
+		margin-top: 3vw;
+	}
 
 	.pic{
 		width: 100%;
@@ -282,7 +305,7 @@ body{
 		overflow: hidden;
 		text-align: center;
 		display: block;
-		padding-top: 15%;
+		padding-top: 10%;
 		padding-bottom: 10%;
 		font-size: 4vw;
 		transition:0.01s all;
@@ -322,9 +345,7 @@ body{
 .soc{
 	padding-top: 10vw;
 }
-.cont{
-	padding-top: 20vw;
-}
+
 .soc a{
 	margin: 5vw;
 
@@ -351,7 +372,21 @@ body{
 @media (max-width: 980px){
 	.photosLa{
 	max-width: 100%;
+
 }
+.but a{
+	width: auto;
+	padding: 1rem  0px 0.5rem 0px;
+	
+	border-bottom: 1px solid #222;
+	transition:0.5s all;
+}
+.logo{
+	margin-top: 0.5rem;
+}
+
+
+
 
 @media (max-width: 980px) and (orientation:landscape){
 	
