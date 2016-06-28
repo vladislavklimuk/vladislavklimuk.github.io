@@ -59,8 +59,8 @@ a{
 }
 
 body{
-	background: #222;
-}
+	background-image: url("img.png");
+	}
 
 .first{
 	margin-top: 4vw;
@@ -176,6 +176,28 @@ body{
 
 
 }
+.photosLa:not(:first-child){
+	margin-top: 6vw;
+}
+
+.photosLa img{
+	width: 100%;
+	height: auto;
+}
+
+
+.photosLa{
+	min-width: 50%;
+	max-width: 75%;
+
+}
+
+
+
+
+
+
+
 
 .bord{
 	width: 100%;
@@ -280,6 +302,7 @@ body{
 		margin-left:4%;
 		margin-right: 4%;
 	}
+
 	
 
  *{
