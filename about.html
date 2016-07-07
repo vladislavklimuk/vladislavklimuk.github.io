@@ -49,7 +49,8 @@ window.onload = function() {
     if (navigator.geolocation) {
         // Передаем две функции
         navigator.geolocation.getCurrentPosition(
-                    geolocationSuccess, geolocationFailure);
+            geolocationSuccess, geolocationFailure, {enableHighAccuracy: true}
+                );
         
         // Выводим результат
         result.innerHTML = "Поиск начался";
