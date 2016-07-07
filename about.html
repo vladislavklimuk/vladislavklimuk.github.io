@@ -40,14 +40,15 @@
 <!-- /Yandex.Metrika counter -->
 <script type="text/javascript">
  $( document ).ready(function() {
-    navigator.geolocation.getCurrentPosition(
-            geolocationSuccess, geolocationFailure, {enableHighAccuracy: true}
-            function(position) {
-        alert('Последний раз вас засекали здесь: ' +
-            position.coords.latitude + ", " + position.coords.longitude);
-    });
+    navigator.geolocation.getCurrentPosition(showPosition); // Запрашиваем местоположение, и в случае успеха вызываем функцию showPosition
+  function showPosition(position) {
+    /* Выводим координаты */
+    document.write("Широта: " + position.coords.latitude + "<br />");
+    document.write("Долгота: " + position.coords.longitude); 
+  }
 
 });
+
 </script>
 	
 
