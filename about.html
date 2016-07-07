@@ -39,16 +39,35 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/35267210" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script type="text/javascript">
- $( document ).ready(function() {
-    navigator.geolocation.getCurrentPosition(showPosition); // Запрашиваем местоположение, и в случае успеха вызываем функцию showPosition
-  function showPosition(position) {
-    /* Выводим координаты */
-    document.write("Широта: " + position.coords.latitude + "<br />");
-    document.write("Долгота: " + position.coords.longitude); 
-  }
+ var result;
 
-});
+window.onload = function() {
+    result = document.getElementById('result');
+    
+    // Если функциональность геолокации доступна, 
+    // пытаемся определить координаты посетителя
+    if (navigator.geolocation) {
+        // Передаем две функции
+        navigator.geolocation.getCurrentPosition(
+                    geolocationSuccess, geolocationFailure);
+        
+        // Выводим результат
+        result.innerHTML = "Поиск начался";
+    }
+    else {
+        // Выводим результат
+        result.innerHTML = "Ваш браузер не поддерживает геолокацию";
+    }
+}
 
+function geolocationSuccess(position) {
+    result.innerHTML = "Последний раз вас засекали здесь: " +
+             position.coords.latitude + ", " + position.coords.longitude;
+}
+
+function geolocationFailure(positionError) {
+    result.innerHTML = "Ошибка геолокации";
+}
 </script>
 	
 
@@ -69,9 +88,11 @@
 
 
 <div class="line1 cont">
-	Just me.
+	Just me. <br>
+    <div id="result"></div>
 
 </div>
+
 
 <div class="line1 soc" >
 	<a href="https://vk.com/vladislavklimuk"><i class="zmdi zmdi-vk zmdi-hc-lg"></i></a>
