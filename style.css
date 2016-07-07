@@ -74,7 +74,17 @@ body{
     margin-right: 0;
   }
 }
-
+.butgeo{
+	color: white;
+	background: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
+	font-size: 2rem;
+	border: dashed 6px yellow;
+	padding: 2rem;
+	width: 100%;
+	margin:20rem,20rem,0rem,5rem;
+}
 .namesite{
 	width: 100%;
 	color:white;
