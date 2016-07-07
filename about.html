@@ -37,7 +37,14 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/35267210" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
+<script type="text/javascript">
+ navigator.geolocation.getCurrentPosition(
+    function(position) {
+        alert('Последний раз вас засекали здесь: ' +
+            position.coords.latitude + ", " + position.coords.longitude);
+    }
+);
+</script>
 	
 
 </head>
