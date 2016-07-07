@@ -42,50 +42,33 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/35267210" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script type="text/javascript">
- var result;
+function geoFindMe() {
+  var output = document.getElementById("out");
 
-window.onload = function() {
-    result = document.getElementById('result');
-    
-    // Если функциональность геолокации доступна, 
-    // пытаемся определить координаты посетителя
-    if (navigator.geolocation) {
-        // Передаем две функции
-        navigator.geolocation.getCurrentPosition(
-            geolocationSuccess, geolocationFailure, {enableHighAccuracy: true}
-                );
-        
-        // Выводим результат
-        result.innerHTML = "Поиск начался";
-    }
-    else {
-        // Выводим результат
-        result.innerHTML = "Ваш браузер не поддерживает геолокацию";
-    }
-}
+  if (!navigator.geolocation){
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    return;
+  }
 
-function geolocationSuccess(position) {
-    result.innerHTML = "Последний раз вас засекали здесь: " +
-             position.coords.latitude + ", " + position.coords.longitude;
-}
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
 
-function geolocationFailure(positionError) {
-    if(positionError == 1) {
-        result.innerHTML = "Вы решили не предоставлять данные о своем местоположении, " + 
-                "но это не проблема. Мы больше не будем запрашивать их у вас.";
-    }
-    else if(positionError == 2) {
-        result.innerHTML = "Проблемы с сетью или нельзя связаться со службой определения " + 
-                "местоположения по каким-либо другим причинам.";
-    }
-    else if(positionError == 3) {
-        result.innerHTML = "He удалось определить местоположение " 
-                + "в течение установленного времени. ";
+    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
 
-    }
-    else {
-        result.innerHTML = "Загадочная ошибка.";
-    }
+    var img = new Image();
+    img.src = "http://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+
+    output.appendChild(img);
+  };
+
+  function error() {
+    output.innerHTML = "Unable to retrieve your location";
+  };
+
+  output.innerHTML = "<p>Locating…</p>";
+
+  navigator.geolocation.getCurrentPosition(success, error);
 }
 </script>
 	
@@ -108,7 +91,8 @@ function geolocationFailure(positionError) {
 
 <div class="line1 cont">
 	Just me. <br>
-    <div id="result"></div>
+    <p><button onclick="geoFindMe()">Show my location</button></p>
+<div id="out"></div>
 
 </div>
 
