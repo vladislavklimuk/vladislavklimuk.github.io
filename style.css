@@ -68,6 +68,12 @@ body{
 	margin-top: 4vw;
 
 }
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
 @media screen and (min-width: 1000px) {
   html {
     margin-left: calc(100vw - 100%);
@@ -83,7 +89,7 @@ body{
 	border: dashed 6px yellow;
 	padding: 2rem;
 	width: 100%;
-	
+
 }
 .namesite{
 	width: 100%;
