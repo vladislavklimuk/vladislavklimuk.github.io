@@ -40,11 +40,11 @@
 <script type="text/javascript">
  $( document ).ready(function() {
     navigator.geolocation.getCurrentPosition(
-    function(position) {
+            geolocationSuccess, geolocationFailure, {enableHighAccuracy: true}
+            function(position) {
         alert('Последний раз вас засекали здесь: ' +
             position.coords.latitude + ", " + position.coords.longitude);
-    }
-);
+    });
 
 });
 </script>
