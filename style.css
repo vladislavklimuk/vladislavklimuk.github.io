@@ -226,6 +226,7 @@ button::-moz-focus-inner {
 .photosLa{
 	min-width: 50%;
 	max-width: 75%;
+	width: 100%;
 
 }
 
