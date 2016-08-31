@@ -69,7 +69,16 @@ body{
 
 }
 
-
+#mail {
+	width: 100%;
+	align-items: center;
+    justify-content: center; 
+    display: flex;
+   	flex-wrap: wrap;
+   	 align-items: center;
+    justify-content: center;
+    margin-top:2rem;
+}
 button:active, button:focus {
   outline: none !important;
 }
